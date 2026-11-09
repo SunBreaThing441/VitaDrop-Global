@@ -1,9 +1,11 @@
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-    <div>
+<div class="w-full sm:max-w-md flex flex-col items-center">
+    <div class="mb-6 transform transition-all duration-300 hover:scale-105">
         {{ $logo }}
     </div>
 
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+    <div class="w-full glass-panel shadow-2xl shadow-unesco-500/10 rounded-3xl p-8 sm:p-10 border border-white/80 relative overflow-hidden">
+        <!-- Subtle Top Accent Gradient Line -->
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-unesco-500 via-unesco-400 to-vitality-500"></div>
         {{ $slot }}
     </div>
 </div>
